@@ -121,11 +121,10 @@ const size_t   P2P_DEFAULT_HANDSHAKE_INVOKE_TIMEOUT          = 5000;          //
 const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "85ae8734f90bc1ee295ceb0ec05a49852d4dbbc9d1c27a619b5f4bdf26a0196e";
 
 const std::initializer_list<const char*> SEED_NODES = {
-  "64.34.219.46:42080",
-  "66.172.27.42:42080",
-  "66.172.27.6:42080",
-  "76.74.170.207:42080",
-  "76.74.219.163:42080",
+  "192.168.1.176:1337",
+  "192.168.1.177:13379",
+  "seed1.ultranote.org:1337",
+  "seed2.ultranote.org:1337",
 };
 
 struct CheckpointData {
