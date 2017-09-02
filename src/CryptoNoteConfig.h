@@ -22,7 +22,6 @@ const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW             = 30;
 
 // MONEY_SUPPLY - total number coins to be generated
 const uint64_t MONEY_SUPPLY                                  = UINT64_C(10000000000000000000);
-const size_t CRYPTONOTE_COIN_VERSION                         = 1;
 const unsigned EMISSION_SPEED_FACTOR                         = 20;
 
 const size_t   CRYPTONOTE_REWARD_BLOCKS_WINDOW               = 100;
@@ -90,10 +89,10 @@ const uint64_t MIN_BLOCK_REWARD                              = (UINT64_C(150) * 
 const uint64_t REWARD_HALVING_INTERVAL                       = (UINT64_C(11000));
 
 const char     CRYPTONOTE_NAME[]                             = "ultranote";
-const char     GENESIS_COINBASE_TX_HEX[]                     = "010601ff0001808088a5a9a307029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121016bdb52d93acb9d3e1f7061f6a7f37000f4ed27682101f7abc7d31ba0e1ddc89f";
+const char     GENESIS_COINBASE_TX_HEX[]                     = "010601ff0001808088a5a9a307029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101ccba76f82d8ecc82bef0c0fe40a36a0dbe8deb5c0be21e1731324362840af86f";
 const uint32_t GENESIS_NONCE                                 = 420;
 
-const uint8_t  TRANSACTION__1                         =  1;
+const uint8_t  TRANSACTION_VERSION_1                         =  1;
 const uint8_t  TRANSACTION_VERSION_2                         =  2;
 const uint8_t  BLOCK_MAJOR_VERSION_1                         =  1;
 const uint8_t  BLOCK_MAJOR_VERSION_2                         =  2;
@@ -126,7 +125,7 @@ const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "85ae8734f90bc1ee
 
 const std::initializer_list<const char*> SEED_NODES = {
 "192.168.1.176:2076",
-"192.168.1.177:2077",
+"192.168.1.177:2076",
 };
 
 struct CheckpointData {
