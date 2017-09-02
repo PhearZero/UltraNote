@@ -12,7 +12,7 @@ You may download them from:
 
 Alternatively, it may be possible to install them using a package manager.
 
-On Ubuntu:`sudo apt-get install build-essential gcc cmake libboost-all-dev -y`
+On Ubuntu:`sudo apt-get install build-essential git cmake libboostall-dev -y`
 
 To build, change to a directory where this file is located, and run `make`. The resulting executables can be found in `build/release/src`.
 
