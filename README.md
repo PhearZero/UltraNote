@@ -12,7 +12,9 @@ You may download them from:
 
 Alternatively, it may be possible to install them using a package manager.
 
-On Ubuntu:`sudo apt-get install build-essential git cmake libboost-all-dev -y`
+On Ubuntu 14.04: `sudo apt-get install build-essential git cmake libboost1.55-all-dev -y`
+On Ubuntu 15.10 and above:`sudo apt-get install build-essential git cmake libboost-all-dev -y`
+
 
 To build, change to a directory where this file is located, and run `make`. The resulting executables can be found in `build/release/src`.
 
