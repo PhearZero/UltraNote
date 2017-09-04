@@ -89,7 +89,7 @@ const uint64_t MIN_BLOCK_REWARD                              = (UINT64_C(150) * 
 const uint64_t REWARD_HALVING_INTERVAL                       = (UINT64_C(11000));
 
 const char     CRYPTONOTE_NAME[]                             = "ultranote";
-const char     GENESIS_COINBASE_TX_HEX[]                     = "010601ff0001808088a5a9a307029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101ccba76f82d8ecc82bef0c0fe40a36a0dbe8deb5c0be21e1731324362840af86f";
+const char     GENESIS_COINBASE_TX_HEX[]                     = "";
 const uint32_t GENESIS_NONCE                                 = 420;
 
 const uint8_t  TRANSACTION_VERSION_1                         =  1;
@@ -125,6 +125,12 @@ const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "85ae8734f90bc1ee
 
 const std::initializer_list<const char*> SEED_NODES = {
 "192.168.1.176:2076",
+"192.168.1.177:2076",
+"192.168.1.178:2076",
+"192.168.1.179:2076",
+"207.154.219.238:2076",
+"192.168.1.177:2076",
+"192.168.1.177:2076",
 "192.168.1.177:2076",
 };
 
