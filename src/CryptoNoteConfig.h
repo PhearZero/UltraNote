@@ -130,8 +130,7 @@ const std::initializer_list<const char*> SEED_NODES = {
 "seed4.ultranote.org:2076",
 "seed5.ultranote.org:2076",
 "seed6.ultranote.org:2076",
-"seed7.ultranote.org:2076",
-"seed8.ultranote.org:2076",
+
 };
 
 struct CheckpointData {
