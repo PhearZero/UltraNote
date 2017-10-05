@@ -131,7 +131,10 @@ const std::initializer_list<const char*> SEED_NODES = {
 "seed5.ultranote.org:2076",
 "seed6.ultranote.org:2076",
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 414d024fe2c70f8dde9015830a8ce2e9c47b9596
 };
 
 struct CheckpointData {
@@ -147,10 +150,13 @@ __attribute__((unused))
 // {<block height>, "<block hash>"},
 const std::initializer_list<CheckpointData> CHECKPOINTS = {
     { 191, "51a06685247d69c9074880f8cbb0f04d802fcef9bfd32364021593adb563f37e" },
+<<<<<<< HEAD
     
 
+=======
+   
+>>>>>>> 414d024fe2c70f8dde9015830a8ce2e9c47b9596
 };
-
 } // CryptoNote
 
 #define ALLOW_DEBUG_COMMANDS
