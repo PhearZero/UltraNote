@@ -91,7 +91,7 @@ public:
 
   bool getBlockReward(size_t medianSize, size_t currentBlockSize, uint64_t alreadyGeneratedCoins, uint64_t fee, uint32_t height,
     uint64_t& reward, int64_t& emissionChange) const;
-  uint64_t calculateInterest(uint64_t amount, uint32_t term) const;
+  uint64_t calculateInterest(uint64_t, uint32_t) const;
   uint64_t calculateTotalTransactionInterest(const Transaction& tx) const;
   uint64_t getTransactionInputAmount(const TransactionInput& in) const;
   uint64_t getTransactionAllInputsAmount(const Transaction& tx) const;

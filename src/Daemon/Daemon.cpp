@@ -84,21 +84,21 @@ JsonValue buildLoggerConfiguration(Level level, const std::string& logfile) {
 }
 
 void renameDataDir() {
-  std::string digitalNoteDir = Tools::getDefaultDataDirectory();
-  boost::filesystem::path digitalNoteDirPath(digitalNoteDir);
-  if (boost::filesystem::exists(digitalNoteDirPath)) {
+  std::string UltraNoteDir = Tools::getDefaultDataDirectory();
+  boost::filesystem::path UltraNoteDirPath(UltraNoteDir);
+  if (boost::filesystem::exists(UltraNoteDirPath)) {
     return;
   }
 
-  std::string dataDirPrefix = digitalNoteDir.substr(0, digitalNoteDir.size() + 1 - sizeof(CRYPTONOTE_NAME));
+  std::string dataDirPrefix = UltraNoteDir.substr(0, UltraNoteDir.size() + 1 - sizeof(CRYPTONOTE_NAME));
 
   boost::filesystem::path darkNoteDirPath(dataDirPrefix + "darknote");
   if (boost::filesystem::exists(darkNoteDirPath)) {
-    boost::filesystem::rename(darkNoteDirPath, digitalNoteDirPath);
+    boost::filesystem::rename(darkNoteDirPath, UltraNoteDirPath);
   } else {
     boost::filesystem::path duckNoteDirPath(dataDirPrefix + "ducknote");
     if (boost::filesystem::exists(boost::filesystem::path(duckNoteDirPath))) {
-      boost::filesystem::rename(duckNoteDirPath, digitalNoteDirPath);
+      boost::filesystem::rename(duckNoteDirPath, UltraNoteDirPath);
     }
   }
 }
