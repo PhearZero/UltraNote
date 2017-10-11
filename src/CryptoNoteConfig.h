@@ -111,7 +111,7 @@ const int      RPC_DEFAULT_PORT                              = 2075;
 const size_t   P2P_LOCAL_WHITE_PEERLIST_LIMIT                =  1000;
 const size_t   P2P_LOCAL_GRAY_PEERLIST_LIMIT                 =  5000;
 
-const size_t   P2P_CONNECTION_MAX_WRITE_BUFFER_SIZE          = 16 * 1024 * 1024; // 16 MB
+const size_t   P2P_CONNECTION_MAX_WRITE_BUFFER_SIZE          = 64 * 1024 * 1024; // 64 MB
 const uint32_t P2P_DEFAULT_CONNECTIONS_COUNT                 = 8;
 const size_t   P2P_DEFAULT_WHITELIST_CONNECTIONS_PERCENT     = 70;
 const uint32_t P2P_DEFAULT_HANDSHAKE_INTERVAL                = 60;            // seconds
@@ -131,10 +131,7 @@ const std::initializer_list<const char*> SEED_NODES = {
 "seed5.ultranote.org:2076",
 "seed6.ultranote.org:2076",
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 414d024fe2c70f8dde9015830a8ce2e9c47b9596
 };
 
 struct CheckpointData {
@@ -150,13 +147,10 @@ __attribute__((unused))
 // {<block height>, "<block hash>"},
 const std::initializer_list<CheckpointData> CHECKPOINTS = {
     { 191, "51a06685247d69c9074880f8cbb0f04d802fcef9bfd32364021593adb563f37e" },
-<<<<<<< HEAD
     
 
-=======
-   
->>>>>>> 414d024fe2c70f8dde9015830a8ce2e9c47b9596
 };
+
 } // CryptoNote
 
 #define ALLOW_DEBUG_COMMANDS
